@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Smith's Pet Lodge::Contact</title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="petlodge.css">
+	<!--[if 1t IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+	<script>
+		function validateForm() {
+		if (document.forms[0].myEmail.value == "" ) {
+			alert("Please enter an e-mail address.");
+			return false;	
+		}	//end if
+		return true;
+		} //end function validateForm
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+	<header></header>
+	<nav>
+		<ul>
+			<li><a href="petlodgeindex.html">Home</a></li>	
+			<li><a href="smithlodgegrooming.html">Grooming</a></li>
+			<li><a href="smithlodgeboarding.html">Boarding</a></li>
+		   <li><a href="smithlodgecontact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Contact <span class="studio">Smith's Pet Lodge</span></h2>
+		<p>We would love to hear from you. So, leave us your comments and concerns.<br>
+		   Required Information is marked with an asterisk (*)</p>
+		<img class="floatright" src="sandywatchingtv.jpg" alt="dog watching tv"
+		width="225" height="300">
+		<form method="post" action="http://webdevbasics.net/scripts/yoga.php"
+			onsubmit="return validateForm()">
+			<label for="myName">Name:</label>
+				<input type="text" name="myName" id="myName">	
+			<label for="myEmail">*Email:</label>
+				<input type="email" name="myEmail" id="myEmail">
+			<label for="myComments">Comments and Concerns:</label>
+				<textarea name="myComments" rows="15" cols="40" id="myComments"></textarea>
+				<input type="submit" name="mySubmit" id="mySubmit" value="Send Now">
+		</form>	
+		<div class="clear">	
+			<p><span class="studio">Smith's Pet Lodge</span><br>
+			311 Pet Way<br>
+			Albany, NY 12205<br><br>
+			555-555-5555</p>
+		</div>
+	</main>
+	<footer>
+	Copyright &copy; 2017 Smith's Pet Lodge<br>
+		<div>
+			<a href="mailto:smithspetlodge@smiths.com">smithspetlodge@smiths.com</a>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
